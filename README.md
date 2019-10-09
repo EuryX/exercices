@@ -19,7 +19,7 @@ documentation officielle :
 https://www.php.net/manual/fr/
 
 
-#### Exercice exemple :
+## Exercice exemple :
 >Ecrire un programme qui additionne deux nombres saisis.
 ```
 Entrée : 14 6
@@ -42,7 +42,7 @@ $n = [14, 6];
 echo array_sum($n);
 ```
 
-#### Exercice 01
+## Exercice 01
 >Ecrire un programme qui indique si le nombre saisi est un multiple de 3 ou de 7.
 ```
 Entrée : 14
@@ -54,7 +54,7 @@ Sortie : Multiple de 3 et de 7
 Entrée : 18
 Sortie : Multiple de 3
 ```
-
+-----------------------------------------------------
 Solution possible en python :
 ```python
 n = 21
@@ -69,7 +69,7 @@ else:
 
 print(message)
 ```
-
+-----------------------------------------------------
 Solution possible en javascript :
 ```javascript
 let n = 21;
@@ -87,7 +87,7 @@ if (n % 7 == 0 && n % 3 == 0) {
 console.log(message);
 ```
 
-#### Exercice 02
+## Exercice 02
 >Ecrire un programme qui indique l'intervalle dans lequel se situe le nombre saisi.
 >Les deux intervalles sont : 0 à 100 et 101 à 200.
 ```
@@ -98,70 +98,70 @@ Entrée : 156
 Sortie : Intervalle 101 à 200
 ```
 
-#### Exercice 03
+## Exercice 03
 >Ecrire un programme qui retourne la moyenne de 3 nombres, arrondie à un chiffre après la virgule.
 ```
 Entrée : 5, 8, 12
 Sortie : 12.5
 ```
 
-#### Exercice 04
+## Exercice 04
 >Ecrire un programme qui affiche les nombres pairs de 0 (inclus) à N (inclus), en respectant le format.
 ```
 Entrée : N
 Sortie : 0-2-4-6-8-10-12-14-16-20-...-N
 ```
 
-#### Exercice 05
+## Exercice 05
 >Ecrire un programme qui affiche la date courante en respectant le format.
 ```
 Entrée : -
 Sortie : Nous sommes aujourd'hui le mercredi 9 septembre 2019
 ```
 
-#### Exercice 06
+## Exercice 06
 >Ecrire un programme qui renvoi le maximum parmi 3 entiers saisis.
 ```
 Entrée : 12, 8, 41
 Sortie : 41
 ```
 
-#### Exercice 07
+## Exercice 07
 >Ecrire un programme qui retourne un mot avec alternativement des lettre en majuscule et en minuscule.
 ```
 Entrée : gourmandise
 Sortie : GoUrMaNdIsE
 ```
 
-#### Exercice 08
+## Exercice 08
 >Ecrire un programme qui enlève toutes les voyelles d'un mot saisie.
 ```
 Entrée : neptune
 Sortie : nptn
 ```
 
-#### Exercice 09
+## Exercice 09
 >Ecrire un programme qui raccourci une chaîne caractère et retourne uiquement les trois premiers et les trois derniers caractères, séparés par trois points.
 ```
 Entrée : neptune est une planète éloignée de la terre
 Sortie : nep...rre
 ```
 
-#### Exercice 10
+## Exercice 10
 >Ecrire un programme qui retourne l'âge à partir d'une date de naissance saisie.
 ```
 Entrée : 10/08/1988
 Sortie : 31
 ```
 
-#### Exercice 11
+## Exercice 11
 >Ecrire un programme qui retourne un mot inversé.
 ```
 Entrée : maison
 Sortie : nosiam
 ```
 
-#### Exercice 12
+## Exercice 12
 >Ecrire un programme qui valide si un mot saisi est composé uniquement de caractères alphanumériques.
 ```
 Entrée : sangoku
@@ -171,7 +171,7 @@ Entrée : san!goku
 Sortie : nok
 ```
 
-#### Exercice 13
+## Exercice 13
 >Ecrire un programme converti un nombre de secondes en heures, minutes et secondes.
 ```
 Entrée : 125
@@ -181,7 +181,7 @@ Entrée : 3728
 Sortie : 1h2m8s
 ```
 
-#### Exercice 14
+## Exercice 14
 >Ecrire un programme qui détermine si un mot est un palyndrome ou non.
 ```
 Entrée : kayak
