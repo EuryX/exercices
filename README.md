@@ -55,6 +55,38 @@ Entrée : 18
 Sortie : Multiple de 3
 ```
 
+Solution possible en python :
+```python
+n = 21
+message = "Pas multiple de 7 ou 3"
+if (n % 7 == 0) and (n % 3 == 0):
+  message = "Multiple de 3 et de 7"
+else:
+  if n % 3 == 0:
+    message = "Multiple de 3"
+  if n % 7 == 0:
+    message = "Multiple de 7"
+
+print(message)
+```
+
+Solution possible en javascript :
+```javascript
+let n = 21;
+let message = "Pas multiple de 7 ou 3";
+if (n % 7 == 0 && n % 3 == 0) {
+	message = "Multiple de 3 et de 7";
+} else {
+	if (n % 3 == 0) {
+		message = "Multiple de 3";
+	}
+	if (n % 7 == 0) {
+		message = "Multiple de 7";
+	}
+}
+console.log(message);
+```
+
 #### Exercice 02
 >Ecrire un programme qui indique l'intervalle dans lequel se situe le nombre saisi.
 >Les deux intervalles sont : 0 à 100 et 101 à 200.
