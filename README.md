@@ -97,7 +97,21 @@ Sortie : Intervalle 0 à 100
 Entrée : 156
 Sortie : Intervalle 101 à 200
 ```
+-----------------------------------------------------
+Solution possible en python :
+```
+n = 2
 
+message = "choisir un nombre entre 0 et 200"
+
+if (n>=0) and (n<=100):
+   message = "Intervalle 0 à 100"
+
+elif(n>=101) and (n<=200):
+    message = "Intervalle 101 à 200"
+
+print(message)
+```
 ## Exercice 03
 >Ecrire un programme qui retourne la moyenne de 3 nombres, arrondie à un chiffre après la virgule.
 ```
