@@ -90,7 +90,9 @@ console.log(message);
 Solution possible en java (proposée par Nans) :
 ```java
 public class Demo {
+
     public static void main(String[] args) {
+    
         int saisie = 8;
         String resultat = "Ce chiffre n'est un multiple ni de 3 ni de 7";
     
@@ -108,12 +110,12 @@ public class Demo {
 -----------------------------------------------------
 Solution possible en C# (proposée par [Loic](https://github.com/EuryX) ) :
 ```C#
-public class Program
-{
-    public static void Main()
-    {
-        String message = "pas multiple de 7 ou 3";
+public class Program {
+
+    public static void Main() {
+    
         int n = 19;
+        String message = "pas multiple de 7 ou 3";
 		
         if (n % 3 == 0 && n % 7 == 0) {
             message = "multiple de 7 et de 3";	
