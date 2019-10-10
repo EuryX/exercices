@@ -106,7 +106,6 @@ public class Demo {
 }
 ```
 
-
 ## Exercice 02
 >Ecrire un programme qui indique l'intervalle dans lequel se situe le nombre saisi.
 >Les deux intervalles sont : 0 à 100 et 101 à 200.
@@ -118,20 +117,17 @@ Entrée : 156
 Sortie : Intervalle 101 à 200
 ```
 -----------------------------------------------------
-Solution possible en python :
-```
+Solution possible en python (proposée par [Loic](https://github.com/EuryX) )  :
+```python
 n = 2
-
 message = "choisir un nombre entre 0 et 200"
-
-if (n>=0) and (n<=100):
+if (n >= 0) and (n <= 100):
    message = "Intervalle 0 à 100"
-
-elif(n>=101) and (n<=200):
+elif(n >= 101) and (n <= 200):
     message = "Intervalle 101 à 200"
-
 print(message)
 ```
+
 ## Exercice 03
 >Ecrire un programme qui retourne la moyenne de 3 nombres, arrondie à un chiffre après la virgule.
 ```
