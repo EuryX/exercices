@@ -167,19 +167,21 @@ public class Program {
     }
 }
 ```
+-----------------------------------------------------
 Solution possible en Ruby (proposée par [Loic](https://github.com/EuryX) ) :
 ```Ruby
 n = 19
-if n % 3==0 and n % 7==0
+if n % 3 == 0 and n % 7 == 0
   puts "multiple de 3 et 7"
-elsif n % 7==0
+elsif n % 7 == 0
   puts "multiple de 7"
-elsif n % 3==0
+elsif n % 3 == 0
   puts "multiple de 3"
 else
   puts "pas multiple de 3 ni de 7"
 end
 ```
+
 ## Exercice 02
 >Ecrire un programme qui indique l'intervalle dans lequel se situe le nombre saisi.
 >Les deux intervalles sont : 0 à 100 et 101 à 200.
