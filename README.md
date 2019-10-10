@@ -18,6 +18,9 @@ http://www.writephponline.com
 documentation officielle :
 https://www.php.net/manual/fr/
 
+C en ligne (merci [Christophe](https://github.com/StickHash) ) :
+https://www.onlinegdb.com/online_c_compiler :
+
 
 ## Exercice exemple :
 >Ecrire un programme qui additionne deux nombres saisis.
@@ -90,7 +93,9 @@ console.log(message);
 Solution possible en java (proposée par Nans) :
 ```java
 public class Demo {
+
     public static void main(String[] args) {
+    
         int saisie = 8;
         String resultat = "Ce chiffre n'est un multiple ni de 3 ni de 7";
     
@@ -106,8 +111,8 @@ public class Demo {
 }
 ```
 -----------------------------------------------------
-Solution possible en C (interpréteur en ligne ici -> https://www.onlinegdb.com/online_c_compiler):
-```
+Solution possible en C (proposée par [Christophe](https://github.com/StickHash) ) :
+```C
 #include <stdio.h>
 
 int main()
@@ -116,28 +121,50 @@ int main()
     int y = 3;
     int z = 7;
     
-    if (isMultiple(x,y) && isMultiple(x,z)) 
+    if (isMultiple(x, y) && isMultiple(x, z)) 
     {
-        printf("%d est multiple de %d et %d",x,y,z);
+        printf("%d est multiple de %d et %d", x, y, z);
     }
-    else if (isMultiple(x,y))
+    else if (isMultiple(x, y))
     {
-        printf("%d est multiple de %d",x,y);
+        printf("%d est multiple de %d", x, y);
     }
-    else if (isMultiple(x,z))
+    else if (isMultiple(x, z))
     {
-        printf("%d est multiple de %d",x,z);
+        printf("%d est multiple de %d", x, z);
     }
     else
     {
-        printf("%d n'est pas multiple de %d ni de %d",x,y,z);  
+        printf("%d n'est pas multiple de %d ni de %d", x, y, z);  
     }
     return 0;
 }
 
-int isMultiple(int x,int y)
+int isMultiple(int x, int y)
 {
     return x % y == 0;
+}
+```
+-----------------------------------------------------
+Solution possible en C# (proposée par [Loic](https://github.com/EuryX) ) :
+```C#
+public class Program {
+
+    public static void Main() {
+    
+        int n = 19;
+        String message = "pas multiple de 7 ou 3";
+		
+        if (n % 3 == 0 && n % 7 == 0) {
+            message = "multiple de 7 et de 3";	
+        } else if (n % 3 == 0) {
+            message = "multiple de 3";	
+        } else if (n % 7 == 0) {
+            message = "multiple de 7";	
+        }
+	
+        Console.WriteLine(message);		
+    }
 }
 ```
 
@@ -150,6 +177,17 @@ Sortie : Intervalle 0 à 100
 -------------
 Entrée : 156
 Sortie : Intervalle 101 à 200
+```
+-----------------------------------------------------
+Solution possible en python (proposée par [Loic](https://github.com/EuryX) )  :
+```python
+n = 2
+message = "choisir un nombre entre 0 et 200"
+if (n >= 0) and (n <= 100):
+   message = "Intervalle 0 à 100"
+elif(n >= 101) and (n <= 200):
+    message = "Intervalle 101 à 200"
+print(message)
 ```
 
 ## Exercice 03
