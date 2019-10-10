@@ -105,7 +105,41 @@ public class Demo {
     }
 }
 ```
+-----------------------------------------------------
+Solution possible en C (interpréteur en ligne ici -> https://www.onlinegdb.com/online_c_compiler):
+```
+#include <stdio.h>
 
+int main()
+{
+    int x = 21;
+    int y = 3;
+    int z = 7;
+    
+    if (isMultiple(x,y) && isMultiple(x,z)) 
+    {
+        printf("%d est multiple de %d et %d",x,y,z);
+    }
+    else if (isMultiple(x,y))
+    {
+        printf("%d est multiple de %d",x,y);
+    }
+    else if (isMultiple(x,z))
+    {
+        printf("%d est multiple de %d",x,z);
+    }
+    else
+    {
+        printf("%d n'est pas multiple de %d ni de %d",x,y,z);  
+    }
+    return 0;
+}
+
+int isMultiple(int x,int y)
+{
+    return x % y == 0;
+}
+```
 
 ## Exercice 02
 >Ecrire un programme qui indique l'intervalle dans lequel se situe le nombre saisi.
