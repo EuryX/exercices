@@ -181,6 +181,24 @@ else
   puts "pas multiple de 3 ni de 7"
 end
 ```
+-----------------------------------------------------
+Solution possible en PHP (proposée par [Julien21Julien](https://github.com/Julien21Julien) ) :
+```PHP
+$n=21;
+Echo 'Donnez une valeur à $n';
+  
+ if (($n % 7 == 0) and ($n % 3 == 0)) {
+  echo 'Multiple de 3 et de 7';
+} elseif (($n % 3) == 0) {
+     echo 'Multiple de 3';
+} elseif (($n % 7) == 0){
+     echo 'Multiple de 7';
+} else {
+  echo 'Pas de multiple de 3 et de 7';
+}
+```
+
+
 
 ## Exercice 02
 >Ecrire un programme qui indique l'intervalle dans lequel se situe le nombre saisi.
