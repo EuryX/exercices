@@ -106,7 +106,7 @@ public class Demo {
 }
 ```
 -----------------------------------------------------
-Solution possible en C# :
+Solution possible en C# (proposée par [Loic](https://github.com/EuryX) ) :
 ```C#
 public class Program
 {
@@ -115,11 +115,11 @@ public class Program
 		String message = "pas multiple de 7 ou 3";
 		int n = 19;
 		
-		if (n%3==0 && n%7==0){
+		if (n % 3 == 0 && n % 7 == 0){
 		message = "multiple de 7 et de 3";	
-		}	else if (n%3==0){
+		}	else if (n % 3 == 0){
 		message = "multiple de 3";	
-		}	else if (n%7==0){
+		}	else if (n % 7 == 0){
 		message = "multiple de 7";	
 		}		
 		Console.WriteLine(message);		
@@ -136,6 +136,17 @@ Sortie : Intervalle 0 à 100
 -------------
 Entrée : 156
 Sortie : Intervalle 101 à 200
+```
+-----------------------------------------------------
+Solution possible en python (proposée par [Loic](https://github.com/EuryX) )  :
+```python
+n = 2
+message = "choisir un nombre entre 0 et 200"
+if (n >= 0) and (n <= 100):
+   message = "Intervalle 0 à 100"
+elif(n >= 101) and (n <= 200):
+    message = "Intervalle 101 à 200"
+print(message)
 ```
 
 ## Exercice 03
