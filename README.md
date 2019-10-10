@@ -105,7 +105,27 @@ public class Demo {
     }
 }
 ```
-
+-----------------------------------------------------
+Solution possible en C# :
+```C#
+public class Program
+{
+	public static void Main()
+	{
+		String message = "pas multiple de 7 ou 3";
+		int n = 19;
+		
+		if (n%3==0 && n%7==0){
+		message = "multiple de 7 et de 3";	
+		}	else if (n%3==0){
+		message = "multiple de 3";	
+		}	else if (n%7==0){
+		message = "multiple de 7";	
+		}		
+		Console.WriteLine(message);		
+	}
+}
+```
 
 ## Exercice 02
 >Ecrire un programme qui indique l'intervalle dans lequel se situe le nombre saisi.
