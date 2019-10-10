@@ -18,6 +18,9 @@ http://www.writephponline.com
 documentation officielle :
 https://www.php.net/manual/fr/
 
+C en ligne (merci [Christophe](https://github.com/StickHash) ) :
+https://www.onlinegdb.com/online_c_compiler :
+
 
 ## Exercice exemple :
 >Ecrire un programme qui additionne deux nombres saisis.
@@ -105,6 +108,41 @@ public class Demo {
         }
         System.out.println(resultat);
     }
+}
+```
+-----------------------------------------------------
+Solution possible en C (proposée par [Christophe](https://github.com/StickHash) ) :
+```C
+#include <stdio.h>
+
+int main()
+{
+    int x = 21;
+    int y = 3;
+    int z = 7;
+    
+    if (isMultiple(x, y) && isMultiple(x, z)) 
+    {
+        printf("%d est multiple de %d et %d", x, y, z);
+    }
+    else if (isMultiple(x, y))
+    {
+        printf("%d est multiple de %d", x, y);
+    }
+    else if (isMultiple(x, z))
+    {
+        printf("%d est multiple de %d", x, z);
+    }
+    else
+    {
+        printf("%d n'est pas multiple de %d ni de %d", x, y, z);  
+    }
+    return 0;
+}
+
+int isMultiple(int x, int y)
+{
+    return x % y == 0;
 }
 ```
 -----------------------------------------------------
