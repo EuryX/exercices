@@ -94,12 +94,13 @@ public class Demo {
         int saisie = 8;
         String resultat = "Ce chiffre n'est un multiple ni de 3 ni de 7";
     
-        if (saisie % 3 == 0 && saisie % 7 == 0)
+        if (saisie % 3 == 0 && saisie % 7 == 0) {
             resultat = "Ce chiffre est un multiple de 3 et de 7";
-        else if (saisie % 3 == 0)
+        } else if (saisie % 3 == 0) {
             resultat = "Ce chiffre est un multiple de 3";
-        else if (saisie % 7 == 0)
+        } else if (saisie % 7 == 0) {
             resultat = "Ce chiffre est un multiple de  7";
+        }
         System.out.println(resultat);
     }
 }
