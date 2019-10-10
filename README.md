@@ -296,3 +296,13 @@ Sortie : palyndrome
 Entrée : voiture
 Sortie : pas palyndrome
 ```
+
+## Exercice 15
+>Ecrivez un algorithme qui calcule le schtroumpf de 2 tableaux. 
+Pour calculer le schtroumpf, il faut multiplier chaque élément du tableau 1 par chaque élément du tableau 2, et additionner le tout.
+```
+Entrée : Tableau tab1 (x) Entier
+	 Tableau tab2 (y) Entier
+	 
+Sortie : schtroumpf (tab1,tab2)
+```
