@@ -86,6 +86,24 @@ if (n % 7 == 0 && n % 3 == 0) {
 }
 console.log(message);
 ```
+-----------------------------------------------------
+Solution possible en java (proposée par Nans) :
+```java
+public class Demo {
+	public static void main(String[] args) {
+		int saisie = 8;
+		String resultat = "Ce chiffre n'est un multiple ni de 3 ni de 7";
+		if (saisie % 3 == 0 && saisie % 7 == 0) {
+			resultat = "Ce chiffre est un multiple de 3 et de 7";
+		} else if (saisie % 3 == 0) {
+			resultat = "Ce chiffre est un multiple de 3";
+		} else if (saisie % 7 == 0)
+			resultat = "Ce chiffre est un multiple de  7";
+		System.out.println(resultat);
+	}
+}
+```
+
 
 ## Exercice 02
 >Ecrire un programme qui indique l'intervalle dans lequel se situe le nombre saisi.
