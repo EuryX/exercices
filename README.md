@@ -19,7 +19,7 @@ documentation officielle :
 https://www.php.net/manual/fr/
 
 C en ligne (merci [Christophe](https://github.com/StickHash) ) :
-https://www.onlinegdb.com/online_c_compiler :
+https://www.onlinegdb.com/online_c_compiler
 
 
 ## Exercice exemple :
