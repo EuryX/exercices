@@ -142,7 +142,6 @@ end
 Solution possible en PHP (proposée par [Julien21Julien](https://github.com/Julien21Julien) ) :
 ```PHP
 $n=21;
-Echo 'Donnez une valeur à $n';
   
  if (($n % 7 == 0) and ($n % 3 == 0)) {
   echo 'Multiple de 3 et de 7';
