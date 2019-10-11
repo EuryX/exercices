@@ -36,3 +36,14 @@ else
 puts mess
 end
 ```
+-----------------------------------------------------
+Solution possible en PHP (proposée par [Julien21Julien](https://github.com/Julien21Julien) )  :
+```PHP
+$n=15;
+
+if (($n >= 0) and ($n <= 100)) {
+   echo 'Intervalle 0 à 100';
+} elseif (($n >= 101) and ($n <= 200)) {
+    echo 'Intervalle 101 à 200';
+}
+```
