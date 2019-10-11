@@ -1,6 +1,6 @@
 # Exercices
 
-## Pour participer
+## Pour participer ...
 
 Vous pouvez créer un copie de ce projet sur votre espace (= créer un fork). Vous modifiez ensuite la copie de votre projet, puis vous créez une pull request. 
 Vous pouvez également envoyer vos idées, codes via discord.
