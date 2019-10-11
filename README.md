@@ -1,339 +1,47 @@
 # Exercices
-## Consigne
-L'entrée peut se faire par saisie de l'utilisateur, ou simplement par initialisation d'une variable. Le résultat doit être affiché avec le formatage demandé.
+
+## Pour participer ...
+
+Vous pouvez créer un copie de ce projet sur votre espace (= créer un fork). Vous modifiez ensuite la copie de votre projet, puis vous créez une pull request. 
+Vous pouvez également envoyer vos idées, codes via discord.
 
 ## Ressources
 
 Pour participer sans installer d'outils, vous pouvez utiliser ces interpréteurs en ligne :
 
-python en ligne :
+* python en ligne :
 https://repl.it/languages/python3
 
-documentation officielle :
+* documentation officielle :
 https://docs.python.org/fr/3/
 
-php en ligne :
+* php en ligne :
 http://www.writephponline.com
 
-documentation officielle :
+* documentation officielle :
 https://www.php.net/manual/fr/
 
-C en ligne (merci [Christophe](https://github.com/StickHash) ) :
+* C en ligne (merci [Christophe](https://github.com/StickHash) ) :
 https://www.onlinegdb.com/online_c_compiler
 
 
-## Exercice exemple :
->Ecrire un programme qui additionne deux nombres saisis.
-```
-Entrée : 14 6
-Sortie : 20
-```
+## Exercices
 
-Réponse possible en python :
-```python
-n = [14, 6]
-print(sum(n))
-```
-Réponse possible en javascript :
-```javascript
-const n = [14, 6];
-console.log(n.reduce((a, b) => a + b, 0));
-```
-Réponse possible en php :
-```php
-$n = [14, 6];
-echo array_sum($n);
-```
-
-## Exercice 01
->Ecrire un programme qui indique si le nombre saisi est un multiple de 3 ou de 7.
-```
-Entrée : 14
-Sortie : Multiple de 7
--------------
-Entrée : 21
-Sortie : Multiple de 3 et de 7
--------------
-Entrée : 18
-Sortie : Multiple de 3
-```
------------------------------------------------------
-Solution possible en python :
-```python
-n = 21
-message = "Pas multiple de 7 ou 3"
-if (n % 7 == 0) and (n % 3 == 0):
-  message = "Multiple de 3 et de 7"
-else:
-  if n % 3 == 0:
-    message = "Multiple de 3"
-  if n % 7 == 0:
-    message = "Multiple de 7"
-
-print(message)
-```
------------------------------------------------------
-Solution possible en javascript :
-```javascript
-let n = 21;
-let message = "Pas multiple de 7 ou 3";
-if (n % 7 == 0 && n % 3 == 0) {
-    message = "Multiple de 3 et de 7";
-} else {
-    if (n % 3 == 0) {
-        message = "Multiple de 3";
-    }
-    if (n % 7 == 0) {
-        message = "Multiple de 7";
-    }
-}
-console.log(message);
-```
------------------------------------------------------
-Solution possible en java (proposée par Nans) :
-```java
-public class Demo {
-
-    public static void main(String[] args) {
-    
-        int saisie = 8;
-        String resultat = "Ce chiffre n'est un multiple ni de 3 ni de 7";
-    
-        if (saisie % 3 == 0 && saisie % 7 == 0) {
-            resultat = "Ce chiffre est un multiple de 3 et de 7";
-        } else if (saisie % 3 == 0) {
-            resultat = "Ce chiffre est un multiple de 3";
-        } else if (saisie % 7 == 0) {
-            resultat = "Ce chiffre est un multiple de  7";
-        }
-        System.out.println(resultat);
-    }
-}
-```
------------------------------------------------------
-Solution possible en C (proposée par [Christophe](https://github.com/StickHash) ) :
-```C
-#include <stdio.h>
-
-int main()
-{
-    int x = 21;
-    int y = 3;
-    int z = 7;
-    
-    if (isMultiple(x, y) && isMultiple(x, z)) 
-    {
-        printf("%d est multiple de %d et %d", x, y, z);
-    }
-    else if (isMultiple(x, y))
-    {
-        printf("%d est multiple de %d", x, y);
-    }
-    else if (isMultiple(x, z))
-    {
-        printf("%d est multiple de %d", x, z);
-    }
-    else
-    {
-        printf("%d n'est pas multiple de %d ni de %d", x, y, z);  
-    }
-    return 0;
-}
-
-int isMultiple(int x, int y)
-{
-    return x % y == 0;
-}
-```
------------------------------------------------------
-Solution possible en C# (proposée par [Loic](https://github.com/EuryX) ) :
-```C#
-public class Program {
-
-    public static void Main() {
-    
-        int n = 19;
-        String message = "pas multiple de 7 ou 3";
-		
-        if (n % 3 == 0 && n % 7 == 0) {
-            message = "multiple de 7 et de 3";	
-        } else if (n % 3 == 0) {
-            message = "multiple de 3";	
-        } else if (n % 7 == 0) {
-            message = "multiple de 7";	
-        }
-	
-        Console.WriteLine(message);		
-    }
-}
-```
------------------------------------------------------
-Solution possible en Ruby (proposée par [Loic](https://github.com/EuryX) ) :
-```Ruby
-n = 19
-if n % 3 == 0 and n % 7 == 0
-  puts "multiple de 3 et 7"
-elsif n % 7 == 0
-  puts "multiple de 7"
-elsif n % 3 == 0
-  puts "multiple de 3"
-else
-  puts "pas multiple de 3 ni de 7"
-end
-```
------------------------------------------------------
-Solution possible en PHP (proposée par [Julien21Julien](https://github.com/Julien21Julien) ) :
-```PHP
-$n=21;
-Echo 'Donnez une valeur à $n';
-  
- if (($n % 7 == 0) and ($n % 3 == 0)) {
-  echo 'Multiple de 3 et de 7';
-} elseif (($n % 3) == 0) {
-     echo 'Multiple de 3';
-} elseif (($n % 7) == 0){
-     echo 'Multiple de 7';
-} else {
-  echo 'Pas de multiple de 3 et de 7';
-}
-```
+- [Exercice 01](https://github.com/ermineaweb/exercices/tree/master/Exercice%2001)
+- [Exercice 02](https://github.com/ermineaweb/exercices/tree/master/Exercice%2002)
+- [Exercice 03](https://github.com/ermineaweb/exercices/tree/master/Exercice%2003)
+- [Exercice 04](https://github.com/ermineaweb/exercices/tree/master/Exercice%2004)
+- [Exercice 05](https://github.com/ermineaweb/exercices/tree/master/Exercice%2005)
+- [Exercice 06](https://github.com/ermineaweb/exercices/tree/master/Exercice%2006)
+- [Exercice 07](https://github.com/ermineaweb/exercices/tree/master/Exercice%2007)
+- [Exercice 08](https://github.com/ermineaweb/exercices/tree/master/Exercice%2008)
+- [Exercice 09](https://github.com/ermineaweb/exercices/tree/master/Exercice%2009)
+- [Exercice 10](https://github.com/ermineaweb/exercices/tree/master/Exercice%2010)
+- [Exercice 11](https://github.com/ermineaweb/exercices/tree/master/Exercice%2011)
+- [Exercice 12](https://github.com/ermineaweb/exercices/tree/master/Exercice%2012)
+- [Exercice 13](https://github.com/ermineaweb/exercices/tree/master/Exercice%2013)
+- [Exercice 14](https://github.com/ermineaweb/exercices/tree/master/Exercice%2014)
+- [Exercice 15](https://github.com/ermineaweb/exercices/tree/master/Exercice%2015)
 
 
 
-## Exercice 02
->Ecrire un programme qui indique l'intervalle dans lequel se situe le nombre saisi.
->Les deux intervalles sont : 0 à 100 et 101 à 200.
-```
-Entrée : 85
-Sortie : Intervalle 0 à 100
--------------
-Entrée : 156
-Sortie : Intervalle 101 à 200
-```
------------------------------------------------------
-Solution possible en python (proposée par [Loic](https://github.com/EuryX) )  :
-```python
-n = 2
-message = "choisir un nombre entre 0 et 200"
-if (n >= 0) and (n <= 100):
-   message = "Intervalle 0 à 100"
-elif(n >= 101) and (n <= 200):
-    message = "Intervalle 101 à 200"
-print(message)
-```
------------------------------------------------------
-Solution possible en Ruby (proposée par [Loic](https://github.com/EuryX) )  :
-```Ruby
-n = 190
-if n >= 0 and n <= 100
-  mess = "intervalle 0 a 100"
-elsif n >= 101 and n <= 200
-  mess = "intervalle 101 a 200"
-else 
-  mess = "choisir un nombre entre 0 et 200"
-puts mess
-end
-```
-
-## Exercice 03
->Ecrire un programme qui retourne la moyenne de 3 nombres, arrondie à un chiffre après la virgule.
-```
-Entrée : 5, 8, 12
-Sortie : 12.5
-```
-
-## Exercice 04
->Ecrire un programme qui affiche les nombres pairs de 0 (inclus) à N (inclus), en respectant le format.
-```
-Entrée : N
-Sortie : 0-2-4-6-8-10-12-14-16-20-...-N
-```
-
-## Exercice 05
->Ecrire un programme qui affiche la date courante en respectant le format.
-```
-Entrée : -
-Sortie : Nous sommes aujourd'hui le mercredi 9 septembre 2019
-```
-
-## Exercice 06
->Ecrire un programme qui renvoi le maximum parmi 3 entiers saisis.
-```
-Entrée : 12, 8, 41
-Sortie : 41
-```
-
-## Exercice 07
->Ecrire un programme qui retourne un mot avec alternativement des lettre en majuscule et en minuscule.
-```
-Entrée : gourmandise
-Sortie : GoUrMaNdIsE
-```
-
-## Exercice 08
->Ecrire un programme qui enlève toutes les voyelles d'un mot saisie.
-```
-Entrée : neptune
-Sortie : nptn
-```
-
-## Exercice 09
->Ecrire un programme qui raccourci une chaîne caractère et retourne uiquement les trois premiers et les trois derniers caractères, séparés par trois points.
-```
-Entrée : neptune est une planète éloignée de la terre
-Sortie : nep...rre
-```
-
-## Exercice 10
->Ecrire un programme qui retourne l'âge à partir d'une date de naissance saisie.
-```
-Entrée : 10/08/1988
-Sortie : 31
-```
-
-## Exercice 11
->Ecrire un programme qui retourne un mot inversé.
-```
-Entrée : maison
-Sortie : nosiam
-```
-
-## Exercice 12
->Ecrire un programme qui valide si un mot saisi est composé uniquement de caractères alphanumériques.
-```
-Entrée : sangoku
-Sortie : ok
--------------
-Entrée : san!goku
-Sortie : nok
-```
-
-## Exercice 13
->Ecrire un programme converti un nombre de secondes en heures, minutes et secondes.
-```
-Entrée : 125
-Sortie : 0h2m5s
--------------
-Entrée : 3728
-Sortie : 1h2m8s
-```
-
-## Exercice 14
->Ecrire un programme qui détermine si un mot est un palyndrome ou non.
-```
-Entrée : kayak
-Sortie : palyndrome
--------------
-Entrée : voiture
-Sortie : pas palyndrome
-```
-
-## Exercice 15
->Ecrivez un algorithme qui calcule le schtroumpf de 2 tableaux. 
-Pour calculer le schtroumpf, il faut multiplier chaque élément du tableau 1 par chaque élément du tableau 2, et additionner le tout.
-```
-Entrée : Tableau tab1 (x) Entier
-	 Tableau tab2 (y) Entier
--------------
-Sortie : schtroumpf (tab1,tab2)
-```
