@@ -47,3 +47,30 @@ if (($n >= 0) and ($n <= 100)) {
     echo 'Intervalle 101 à 200';
 }
 ```
+-----------------------------------------------------
+Solution possible en C :
+```C
+#include <stdio.h>
+
+int x = 0;
+int y = 100;
+int z = 200;
+int n = 85;
+
+int main()
+{
+    if(n < x || n > z)
+    {
+        printf("%d est hors plage. Le nombre doit être compris entre %d et %d",n,x,z);
+    }
+    else if(n > y)
+    {
+        printf("%d est compris entre %d et %d",n,y+1,z);
+    }
+    else
+    {
+       printf("%d est compris entre %d et %d",n,x,y); 
+    }
+    return 0;
+}
+```
