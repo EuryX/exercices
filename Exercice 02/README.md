@@ -13,6 +13,13 @@ Entrée : 156
 Sortie : Intervalle 101 à 200
 ```
 -----------------------------------------------------
+Solution possible en Javascript :
+```javascript
+let n = 80;
+message = (n >= 0 && n <= 200) ? (n <= 100) ? "Intervalle 0 à 100" : "Intervalle 100 à 200" : "Choisir un nombre entre 0 et 200";
+console.log(message);
+```
+-----------------------------------------------------
 Solution possible en python (proposée par [Loic](https://github.com/EuryX) )  :
 ```python
 n = 2
