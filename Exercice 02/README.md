@@ -13,6 +13,28 @@ Entrée : 156
 Sortie : Intervalle 101 à 200
 ```
 -----------------------------------------------------
+Solution possible en Java (proposée par Nans )  :
+```java
+public class Demo {
+    public static void main(String[] args) {
+
+        int minInterval1 = 0;
+        int maxInterval1 = 100;
+        int maxInterval2 = 200;
+        int saisie = 50;
+        String message = "Votre saisie doit être comprise entre 0 et 200.";
+
+        if (saisie >= minInterval1 && saisie <= maxInterval1) {
+            message = "Intervalle 0 à 100";
+        } else if (saisie > maxInterval1 && saisie <= maxInterval2) {
+            message = "Intervalle 101 à 200";
+        }
+        System.out.println(message);
+
+    }
+}
+```
+-----------------------------------------------------
 Solution possible en Javascript :
 ```javascript
 let n = 80;
