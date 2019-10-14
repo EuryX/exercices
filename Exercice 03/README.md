@@ -21,3 +21,50 @@ Solution possible en Ruby (proposée par [Loic](https://github.com/EuryX) )  :
 a = [14, 32, 27]
 moy= (a.inject{ |sum, el| sum + el }.to_f / a.size).round(2)
 ```
+-----------------------------------------------------
+Solution possible en C (eh oui! en C faut tout faire!)  :
+```C
+#include <stdio.h>
+
+//En C pour pouvoir faire une moyenne il faut travailler avec des type double (comme en Java)
+
+double x = 15;
+double y = 10;
+double z = 12;
+
+//Il n'existe pas de fonction permettant de faire la moyenne d'un tableau en C. Il faut donc la creer
+//Pour pouvoir passez un tableau en parametre d'une fonction, 
+//il faut declarer le pointeur du tableau lors de la creation de la fonction
+// Comme la fonction a un retour, ici un double, il faut declarer la fonction avant le "main"
+
+double moy(double *tab , int size)
+{
+    int i;
+    double moy;
+    
+    for(i = 0 ; i < size ; i++)
+    {
+       moy += tab[i] / size;
+    }
+    
+    return moy;
+}
+
+int main()
+{
+    //Declaration et instanciation du tableau
+    
+    double tab[] = {x, y, z};
+    
+    //Pour connaitre la taille d'un tableau(son nombre d'elements), il faut la calculer
+    //On divise donc la taille du tableau(en memoire) par la taille du type d'element qu'il contient
+    
+    int size = sizeof(tab) / sizeof(double);
+    
+    //Et voila!
+    
+    printf("la moyenne est %.1f", moy(tab, size));
+    
+    return 0;
+}
+```
