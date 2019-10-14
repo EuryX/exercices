@@ -77,7 +77,7 @@ if (($n >= 0) and ($n <= 100)) {
 }
 ```
 -----------------------------------------------------
-Solution possible en C :
+Solution possible en C (proposée par [Christophe](https://github.com/StickHash) ) :
 ```C
 #include <stdio.h>
 
