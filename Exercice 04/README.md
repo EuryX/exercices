@@ -8,3 +8,13 @@ L'entrée peut se faire par saisie de l'utilisateur, ou simplement par initialis
 Entrée : N
 Sortie : 0-2-4-6-8-10-12-14-16-20-...-N
 ```
+Solution possible en PHP (proposée par [Julien21Julien](https://github.com/Julien21Julien) avec l'aide de Loïc et Romain ) :
+```PHP
+$a=21;
+
+for ($i=0; $i<=$a;$i+=2){
+  
+  echo $i.'-'; 
+ 
+}
+```
