@@ -15,3 +15,9 @@ $a = array(5, 8, 12);
 $moy = array_sum($a) / count($a);
 echo round($moy, 3);
 ```
+-----------------------------------------------------
+Solution possible en Ruby (proposée par [Loic](https://github.com/EuryX) )  :
+```Ruby
+a = [14, 32, 27]
+moy= (a.inject{ |sum, el| sum + el }.to_f / a.size).round(2)
+```
