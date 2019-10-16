@@ -9,7 +9,7 @@ Entrée : -
 Sortie : Nous sommes aujourd'hui le mercredi 9 septembre 2019
 ```
 -----------------------------------------------------
-Solution possible en Ruby (proposée par [Loic](https://github.com/EuryX) )  :
+Solution possible en Javascript  :
 ```javascript
 let dt = new Date();
 let jour = dt.getDay();
