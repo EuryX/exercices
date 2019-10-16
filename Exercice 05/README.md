@@ -10,6 +10,22 @@ Sortie : Nous sommes aujourd'hui le mercredi 9 septembre 2019
 ```
 -----------------------------------------------------
 Solution possible en Ruby (proposée par [Loic](https://github.com/EuryX) )  :
+```javascript
+let dt = new Date();
+let jour = dt.getDay();
+let mois = dt.getMonth();
+let annee = dt.getFullYear();
+
+let tabJour = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
+let tabMois = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre", "novembre", "decembre"];
+
+console.log("Nous sommes aujourd'hui le " + 
+			tabJour[jour] + " " +
+			jour + " " + 
+			tabMois[mois] + " " + annee);
+```
+-----------------------------------------------------
+Solution possible en Ruby (proposée par [Loic](https://github.com/EuryX) )  :
 ```Ruby
 j = ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche']
 
