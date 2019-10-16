@@ -24,7 +24,7 @@ print "-"<<i.to_s
 end
 ```
 -----------------------------------------------------
-Solution possible en Python (en respectant le format ;) )  :
+Solution possible en Python (proposée par [Christophe](https://github.com/StickHash) ) :
 ```Python
 n = 20
 pas = 2
