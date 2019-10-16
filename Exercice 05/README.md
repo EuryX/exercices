@@ -8,7 +8,7 @@ L'entrée peut se faire par saisie de l'utilisateur, ou simplement par initialis
 Entrée : -
 Sortie : Nous sommes aujourd'hui le mercredi 9 septembre 2019
 ```
-
+-----------------------------------------------------
 Solution possible en Ruby (proposée par [Loic](https://github.com/EuryX) )  :
 ```Ruby
 d = Time.now.strftime("Nous sommes aujourd'hui le %A %d %B %Y" )
