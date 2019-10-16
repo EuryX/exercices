@@ -19,9 +19,11 @@ for ($i = 0; $i <= $a; $i += 2) {
 Solution possible en Ruby (proposée par [Loic](https://github.com/EuryX) )  :
 ```Ruby
 a = 53
+b = []
 for i in (0..a).step(2) do 
-print "-"<<i.to_s
+b.push(i)
 end
+b.join("-")
 ```
 -----------------------------------------------------
 Solution possible en Python (proposée par [Christophe](https://github.com/StickHash) ) :
