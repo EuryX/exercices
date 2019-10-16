@@ -13,11 +13,11 @@ Solution possible en Javascript  :
 ```javascript
 // date du jour
 let dt = new Date(); 
-// renvoie le numéro du jour de 0 a 6
+// numéro du jour de 0 a 6
 let jour = dt.getDay();
-// renvoie le numéro du mois de 0 a 11
+// numéro du mois de 0 a 11
 let mois = dt.getMonth();
-// renvoie l'année de la date
+// l'année de la date
 let annee = dt.getFullYear();
 
 let tabJour = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
