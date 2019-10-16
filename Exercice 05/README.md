@@ -11,9 +11,13 @@ Sortie : Nous sommes aujourd'hui le mercredi 9 septembre 2019
 -----------------------------------------------------
 Solution possible en Javascript  :
 ```javascript
-let dt = new Date();
+// date du jour
+let dt = new Date(); 
+// renvoie le numéro du jour de 0 a 6
 let jour = dt.getDay();
+// renvoie le numéro du mois de 0 a 11
 let mois = dt.getMonth();
+// renvoie l'année de la date
 let annee = dt.getFullYear();
 
 let tabJour = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
