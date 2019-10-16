@@ -34,7 +34,8 @@ Solution possible en Ruby (proposée par [Loic](https://github.com/EuryX) )  :
 ```Ruby
 j = ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche']
 
-m = ['janvier', 'fevrier', 'mars', 'avril', 'mai', 'juin', 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'decembre']
+m = ['janvier', 'fevrier', 'mars', 'avril', 'mai', 'juin', 
+     'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'decembre']
 
 d = Time.now.strftime("Nous sommes aujourd'hui le %A %d %m %Y" )
 
