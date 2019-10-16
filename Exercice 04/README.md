@@ -23,3 +23,12 @@ for i in (0..a).step(2) do
 print "-"<<i.to_s
 end
 ```
+-----------------------------------------------------
+Solution possible en Python (en respectant le format ;) )  :
+```Python
+n = 20
+pas = 2
+for nb in range(0, n, pas) :
+    print("%d-" %nb, end = '')
+print(n)
+```
