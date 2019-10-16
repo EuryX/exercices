@@ -21,7 +21,8 @@ let mois = dt.getMonth();
 let annee = dt.getFullYear();
 
 let tabJour = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
-let tabMois = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre", "novembre", "decembre"];
+let tabMois = ["janvier", "février", "mars", "avril", "mai", "juin", 
+	       "juillet", "aout", "septembre", "octobre", "novembre", "decembre"];
 
 console.log("Nous sommes aujourd'hui le " + 
 			tabJour[jour] + " " +
