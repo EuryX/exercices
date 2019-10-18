@@ -127,15 +127,17 @@ public class Program {
 -----------------------------------------------------
 Solution possible en Ruby (proposée par [Loic](https://github.com/EuryX) ) :
 ```Ruby
-n = 19
-if n % 3 == 0 and n % 7 == 0
-  puts "multiple de 3 et 7"
-elsif n % 7 == 0
-  puts "multiple de 7"
-elsif n % 3 == 0
-  puts "multiple de 3"
+n = 14
+a = 3
+b = 7
+if n % a == 0 and n % b == 0
+  puts "multiple de " + a.to_s + " et " + b.to_s
+elsif n % b == 0
+  puts "multiple de " +b.to_s
+elsif n % a == 0
+  puts "multiple de " +a.to_s
 else
-  puts "pas multiple de 3 ni de 7"
+  puts "pas multiple de " + a.to_s + " ni de " +b.to_s
 end
 ```
 -----------------------------------------------------
