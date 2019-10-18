@@ -8,3 +8,14 @@ L'entrée peut se faire par saisie de l'utilisateur, ou simplement par initialis
 Entrée : maison
 Sortie : nosiam
 ```
+
+```Ruby
+a = 'maison'
+b = a.chars
+c = []
+d = a.length
+for i in (0..a.length) do
+c[i] = b[d-i]   
+end
+print c.join('')
+```
