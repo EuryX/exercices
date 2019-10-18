@@ -8,3 +8,14 @@ L'entrée peut se faire par saisie de l'utilisateur, ou simplement par initialis
 Entrée : gourmandise
 Sortie : GoUrMaNdIsE
 ```
+
+Solution possible en Ruby (proposée par [Loic](https://github.com/EuryX) )  :
+```Ruby
+a = 'gourmandise'
+b = a.chars
+for i in (0..a.length).step(2) do 
+b[i] = b[i].upcase
+end
+a = b.join()
+print a
+```
