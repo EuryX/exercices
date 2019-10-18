@@ -8,3 +8,10 @@ L'entrée peut se faire par saisie de l'utilisateur, ou simplement par initialis
 Entrée : neptune est une planète éloignée de la terre
 Sortie : nep...rre
 ```
+
+Solution possible en Ruby (proposée par [Loic](https://github.com/EuryX) )  :
+```Ruby
+a = 'neptune est une planète éloignée de la terre'
+b = a.chars
+puts b[0] + b[1] + b[2] + '...' + b[a.length-3] + b[a.length-2] + b[a.length-1]
+```
